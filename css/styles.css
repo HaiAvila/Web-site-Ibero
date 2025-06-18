@@ -11002,7 +11002,7 @@ p {
   #insNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    border: #EF402C;
+    border: none;
     background-color: #EF402C;
   }
   #insNav .navbar-brand {
