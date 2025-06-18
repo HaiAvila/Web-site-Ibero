@@ -10966,6 +10966,73 @@ p {
   }
 }
 
+#insNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #EF402C;
+}
+#insNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#insNav .navbar-brand {
+  color: #231F20;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#insNav .navbar-brand img {
+  height: 3rem;
+}
+#insNav .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+  font-weight: 500;
+}
+#insNav .navbar-nav .nav-item .nav-link.active, #insNav .navbar-nav .nav-item .nav-link:hover {
+  color: #231F20;
+}
+
+@media (min-width: 992px) {
+  #insNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: #EF402C;
+    background-color: #EF402C;
+  }
+  #insNav .navbar-brand {
+    font-size: 2rem;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #insNav .navbar-brand img {
+    height: 3rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #insNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #EF402C;
+  }
+  #insNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #insNav.navbar-shrink .navbar-brand svg,
+  #insNav.navbar-shrink .navbar-brand img {
+    height: 3rem;
+  }
+  #insNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #insNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
 header.masthead {
   height: 100vh;
   background-image: url("../assets/img/header-bg.jpg");
