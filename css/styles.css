@@ -2861,6 +2861,24 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #6c757d;
 }
 
+.btn-primary {
+  background-color: #EF402C;     /* Color base */
+  color: white;                  /* Texto blanco */
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;         /* Sin subrayado por defecto */
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Al pasar el mouse */
+.btn-primary:hover {
+  background-color: white;       /* Cambia fondo */
+  color: #EF402C;                /* Cambia texto */
+  text-decoration: underline;    /* Subraya */
+}
+
+
 .btn-success {
   --bs-btn-color: #fff;
   --bs-btn-bg: #198754;
