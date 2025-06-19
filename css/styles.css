@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #231F20;
-  --bs-link-hover-color: #231F20;
+  --bs-link-color: #fff;
+  --bs-link-hover-color: #fff;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 }
@@ -3611,7 +3611,7 @@ textarea.form-control-lg {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
+  --bs-nav-link-disabled-color: #fff;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -3731,8 +3731,8 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.3rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
-  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-hover-color: rgba(255, 255, 255, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.1rem;
@@ -10904,6 +10904,7 @@ p {
 
 .scroll-btn:hover {
   text-decoration: none;
+  color: #231F20;
 }
 
 .btn-social {
@@ -10934,9 +10935,7 @@ p {
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
-#mainNav .navbar-brand img {
-  height: 3rem;
-}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.95rem;
@@ -10944,8 +10943,9 @@ p {
   letter-spacing: 0.0625em;
   font-weight: 500;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #231F20;
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(239, 64, 44, 1);
+  font-weight: bold
 }
 
 @media (min-width: 992px) {
@@ -10961,7 +10961,8 @@ p {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 3rem;
+    height: auto;
+    width: 15rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
@@ -10969,12 +10970,21 @@ p {
     padding-bottom: 1rem;
     background-color: #EF402C;
   }
+
+  /* Hover cuando el navbar tiene fondo rojo */
+  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #231F20;
+    font-weight: bold
+  }
+
+
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 3rem;
+    height: auto;
+    width: 15rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -11094,7 +11104,7 @@ header.masthead {
 }
 
 .imagen {
-  width: 1000px;
+  width: 900px;
   height: auto; 
   display: block;
   margin-left: auto;
