@@ -10852,7 +10852,7 @@ p {
   line-height: 1.75;
 }
 
-#services {
+#galeria {
   background-color: white; /* O un gris claro si prefieres */
   min-height: 100vh;        /* Asegura que la sección cubra toda la pantalla */
   padding: 5rem 2rem;
@@ -10868,11 +10868,12 @@ p {
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: normal;
   font-style: italic;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 4rem;
+  color: #4D4D4D;
 }
 
 @media (min-width: 768px) {
@@ -10972,7 +10973,7 @@ p {
   }
 
   /* Hover cuando el navbar tiene fondo rojo */
-  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: #231F20;
     font-weight: bold
   }
@@ -11024,6 +11025,7 @@ p {
 }
 #insNav .navbar-nav .nav-item .nav-link.active, #insNav .navbar-nav .nav-item .nav-link:hover {
   color: #231F20;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
@@ -11111,6 +11113,12 @@ header.masthead {
   margin-right: auto;
 }
 
+.imagen2 {
+  width: 300px;
+  height: auto; 
+  vertical-align: middle;
+}
+
 .masthead-scrolled .masthead-overlay {
   opacity: 0;
   transform: translateY(-50px);
@@ -11154,78 +11162,78 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-#portfolio .portfolio-item {
+#vida .vida-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
-#portfolio .portfolio-item .portfolio-link {
+#vida .vida-item .vida-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#vida .vida-item .vida-link .vida-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(239, 64, 44,0.85);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#vida .vida-item .vida-link .vida-hover .vida-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+#vida .vida-item .vida-link:hover .vida-hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-caption {
+#vida .vida-item .vida-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+#vida .vida-item .vida-caption .vida-caption-heading {
   font-size: 1.5rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+#vida .vida-item .vida-caption .vida-caption-subheading {
   font-style: italic;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.portfolio-modal .modal-dialog {
+.vida-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
 }
-.portfolio-modal .modal-content {
+.vida-modal .modal-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
 }
-.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+.vida-modal .modal-content h2, .vida-modal .modal-content .h2 {
   font-size: 3rem;
   line-height: 3rem;
 }
-.portfolio-modal .modal-content p.item-intro {
+.vida-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
-.portfolio-modal .modal-content p {
+.vida-modal .modal-content p {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content ul.list-inline {
+.vida-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content img {
+.vida-modal .modal-content img {
   margin-bottom: 2rem;
 }
-.portfolio-modal .close-modal {
+.vida-modal .close-modal {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -11234,8 +11242,12 @@ header.masthead .masthead-heading {
   cursor: pointer;
   background-color: transparent;
 }
-.portfolio-modal .close-modal:hover {
+.vida-modal .close-modal:hover {
   opacity: 0.3;
+}
+
+.texto-rojo {
+  color: #EF402C;
 }
 
 .timeline {
